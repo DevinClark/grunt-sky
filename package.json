@@ -1,0 +1,48 @@
+{
+  "name": "grunt-sky",
+  "description": "A simple Markdown JavaScript documentation plugin.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dclarkdesign/sky",
+  "author": {
+    "name": "DevinClark",
+    "email": "dclarkdesign@gmail.com",
+    "url": "http://devin-clark.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dclarkdesign/sky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dclarkdesign/sky/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dclarkdesign/sky/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "marked": "~0.2.10",
+    "esprima": "~1.0.4",
+    "underscore": "~1.5.2"
+  }
+}
