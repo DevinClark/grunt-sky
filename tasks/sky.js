@@ -11,6 +11,10 @@ module.exports = function(grunt) {
 
 	var _ = require('underscore');
 
+	function autolink(text) {
+		return text.replace(regexes.url, "$1[$2]($2)");
+	}
+
 	function parseBlockComment(text) {
 		text = text.replace('*\n * ', '\n\n');
 		text = text.split('\n');
@@ -83,6 +87,7 @@ module.exports = function(grunt) {
 			});
 
 			output = output + "\n\n" + todos + "\n\n" + bugs;
+			output = autolink(output);
 			grunt.file.write(f.dest, output);
 
 			// Print a success message.
